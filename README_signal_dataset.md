@@ -11,7 +11,7 @@ project_root/
 │   └── train_mat.zip        # Unzip to get 'train_mat.h5'
 │
 ├── gen_val_detection_v2.py  # Script to generate detection dataset
-├── datasetdrawing.py        # Visualization of signals
+├── dataset_drawing.py        # Visualization of signals
 ├── train_log/               # Training results and weights
 │   ├── *.pt                 # Model weight files
 │   └── *.txt / *.log        # Training logs
@@ -85,7 +85,7 @@ You can edit `gen_val_detection_v2.py` to control dataset generation:
 Run the following to visualize the time-domain and frequency-domain characteristics of generated signals:
 
 ```bash
-python datasetdrawing.py
+python dataset_drawing.py
 ```
 
 ---
@@ -105,7 +105,7 @@ The `train_log/` folder contains:
 | Task                        | File / Folder               |
 |-----------------------------|-----------------------------|
 | Generate detection dataset  | `gen_val_detection_v2.py`   |
-| Visualize signal processing | `datasetdrawing.py`         |
+| Visualize signal processing | `dataset_drawing.py`         |
 | Raw signal dataset          | `train_mat/train_mat.h5`    |
 | Final dataset               | `signalv3/`                 |
 | Logs & checkpoints          | `train_log/`                |
